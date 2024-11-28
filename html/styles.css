@@ -147,6 +147,14 @@ body {
 .deal-item img:hover, .product-item img:hover {
     border: 1px dotted #000;
 }
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 .product-item p {
     color: red;
@@ -225,7 +233,20 @@ form button:hover {
     width: 100%;
     padding-left: 20px;
 }
-
+.product {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .deal-section, .products {
     display: flex;
     flex-direction: column;

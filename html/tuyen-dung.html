@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển Dụng - FPT Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            margin: 10px 0; /* Thêm khoảng cách giữa logo và navbar */
+            text-align: center; /* Căn giữa nội dung trong logo */
+        }
+
+        .logo img {
+            height: 100px; /* Kích thước logo phù hợp */
+        }
+
+
+        header {
+            background-color: white;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #003366;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .job-posting {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .job-posting h3 {
+            color: #003b5c;
+        }
+
+        .job-posting p {
+            color: #555;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        .form-container form {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-container form input,
+        .form-container form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container form button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+        <a href="index.html"></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyq19Le_afh7wCEdKcniMZHMPbcTQsEviMHA&s" alt="FPT Shop">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="dien-thoai.html">Điện thoại</a></li>
+            <li><a href="may-tinh.html">Máy tính</a></li>
+            <li><a href="may-tinh-bang.html">Máy tính bảng</a></li>
+            <li><a href="phu-kien.html">Phụ kiện</a></li>
+            <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Cơ hội nghề nghiệp tại FPT Shop</h2>
+
+        <!-- Job Listings -->
+        <div class="job-posting">
+            <h3>Chuyên viên bán hàng</h3>
+            <p><strong>Mô tả công việc:</strong> Tư vấn, bán hàng, chăm sóc khách hàng tại cửa hàng FPT Shop.</p>
+            <p><strong>Yêu cầu:</strong> Có kinh nghiệm bán hàng, giao tiếp tốt, chịu được áp lực công việc.</p>
+            <p><strong>Lương:</strong> 7.000.000 VNĐ - 12.000.000 VNĐ/tháng</p>
+        </div>
+
+        <div class="job-posting">
+            <h3>Nhân viên kỹ thuật</h3>
+            <p><strong>Mô tả công việc:</strong> Sửa chữa, bảo trì các thiết bị điện tử tại cửa hàng.</p>
+            <p><strong>Yêu cầu:</strong> Có bằng cấp về kỹ thuật, có kiến thức về điện tử, chịu khó học hỏi.</p>
+            <p><strong>Lương:</strong> 8.000.000 VNĐ - 15.000.000 VNĐ/tháng</p>
+        </div>
+
+        <!-- Apply Form -->
+        <div class="form-container">
+            <h2>Đăng ký ứng tuyển</h2>
+            <form action="#" method="POST">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+
+                <label for="position">Vị trí ứng tuyển</label>
+                <input type="text" id="position" name="position" placeholder="Nhập vị trí ứng tuyển" required>
+
+                <label for="message">Thông tin thêm</label>
+                <textarea id="message" name="message" placeholder="Mô tả thêm về bản thân bạn" required></textarea>
+
+                <button type="submit">Gửi đơn ứng tuyển</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
