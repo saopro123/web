@@ -267,3 +267,60 @@ form button:hover {
 form input:invalid, form textarea:invalid {
     border: 1px solid red;
 }
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column; /* Giữ logo và navbar theo cột */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Menu dọc cho màn hình nhỏ */
+        gap: 10px;
+        text-align: center;
+    }
+
+    .deal-item, .product {
+        width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+        max-width: 300px; /* Đảm bảo không quá lớn */
+        margin: 10px auto;
+    }
+
+    .products, .deals {
+        flex-direction: column; /* Xếp các sản phẩm thành cột */
+        align-items: center;
+    }
+
+    .banner img {
+        height: auto;
+    }
+
+    .search-bar input {
+        width: calc(100% - 60px); /* Đảm bảo input không tràn */
+    }
+
+    .search-bar button {
+        width: auto; /* Đảm bảo nút không quá lớn */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        font-size: 14px; /* Giảm kích thước font trên màn hình nhỏ */
+    }
+
+    .deal-item img, .product-item img {
+        width: 80px; /* Hình ảnh nhỏ hơn */
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
