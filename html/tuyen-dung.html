@@ -163,6 +163,52 @@
             </form>
         </div>
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (event) {
+            // Lấy các giá trị của form
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const position = document.getElementById("position").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            // Biến để kiểm tra hợp lệ
+            let isValid = true;
+
+            // Kiểm tra họ và tên
+            if (name.length < 2) {
+                alert("Họ và tên phải có ít nhất 2 ký tự.");
+                isValid = false;
+            }
+
+            // Kiểm tra email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Email không hợp lệ.");
+                isValid = false;
+            }
+
+            // Kiểm tra vị trí ứng tuyển
+            if (position.length < 3) {
+                alert("Vị trí ứng tuyển phải có ít nhất 3 ký tự.");
+                isValid = false;
+            }
+
+            // Kiểm tra thông tin thêm
+            if (message.length < 10) {
+                alert("Thông tin thêm phải có ít nhất 10 ký tự.");
+                isValid = false;
+            }
+
+            // Nếu không hợp lệ, ngăn việc gửi form
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    });
+    </script>
+    
 
 </body>
 </html>
